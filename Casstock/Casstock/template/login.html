@@ -1,0 +1,51 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    {% include "header.html" %} {% include "navbar.html" %}
+    <div class="container">
+        <!--<h1>Login</h1>-->
+        <div class="row valign-wrapper">
+            <div class="col m3"></div>
+            <div class="col s12 m6" style="margin-top: 60px; margin-bottom: 60px;">
+                <div class="card">
+                    <div class="card-title center">
+                        <span class="card-title">Ingresar</span>
+                    </div>
+                    <div class="card-content center">
+                        <div class="row">
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s12 m12">
+                                        <i class="material-icons prefix">account_circle</i>
+                                        <input id="icon_prefix" type="text" class="validate">
+                                        <label for="icon_prefix">Usuario</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12 m12">
+                                        <i class="material-icons prefix">vpn_key</i>
+                                        <input id="password" type="password" class="validate">
+                                        <label for="password">Contraseña</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card-action center">
+                        <button class="btn waves-effect waves-light orange accent-4" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                          </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col m3"></div>
+        </div>
+    </div>
+
+    {% include "footer.html" %}
+</body>
+
+</html>
